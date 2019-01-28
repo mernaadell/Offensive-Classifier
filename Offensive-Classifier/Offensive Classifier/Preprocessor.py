@@ -29,7 +29,6 @@ def preprocess(X):
 		stemmer = PorterStemmer()
 		document = [stemmer.stem(word) for word in document]
 		document = ' '.join(document)
-		
 		documents.append(document)
 
 	return documents
